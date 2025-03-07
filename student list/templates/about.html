@@ -1,0 +1,82 @@
+{% extends "layer.html" %}
+
+{% block title %}
+รายละเอียดเกี่ยวกับรายวิชา
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/about.css') }}">
+
+<!-- 🔹 Banner Section -->
+<div class="course-banner">
+    <h1 class="course-title">รายละเอียดเกี่ยวกับรายวิชา</h1>
+    <p class="course-subtitle">เรียนรู้และพัฒนาทักษะไปพร้อมกัน</p>
+</div>
+
+<!-- 🔹 Course Details Section -->
+<section class="course-details">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/1.png') }}" class="img-fluid course-image" alt="Course Image">
+            </div>
+            <div class="col-md-6">
+                <h2>หลักสูตร: Web Development</h2>
+                <p>เรียนรู้การพัฒนาเว็บไซต์ตั้งแต่พื้นฐานไปจนถึงระดับสูง ครอบคลุม HTML, CSS, JavaScript, Bootstrap และ Flask</p>
+                <ul>
+                    <li><strong>ระยะเวลา:</strong> 8 สัปดาห์</li>
+                    <li><strong>รูปแบบการเรียน:</strong> ออนไลน์</li>
+                    <li><strong>สอนโดย:</strong> นาย พีระ ขวัญใจคนดีคนเดิม</li>
+                </ul>
+                <a href="{{ url_for('index') }}" class="btn btn-primary btn-lg">สมัครเรียนเลย</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 🔹 Course Syllabus Table -->
+<section class="course-syllabus">
+    <div class="container">
+        <h2 class="text-center">แผนการเรียน</h2>
+        <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>สัปดาห์</th>
+                    <th>หัวข้อ</th>
+                    <th>รายละเอียด</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Introduction to HTML & CSS</td>
+                    <td>พื้นฐานของ HTML และ CSS</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Responsive Web Design</td>
+                    <td>ทำให้เว็บไซต์รองรับทุกอุปกรณ์</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>JavaScript & DOM Manipulation</td>
+                    <td>เรียนรู้การใช้ JavaScript เพื่อโต้ตอบกับหน้าเว็บ</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Bootstrap Framework</td>
+                    <td>สร้าง UI สวยงามโดยใช้ Bootstrap</td>
+                </tr>
+                <tr>
+                    <td>5-8</td>
+                    <td>Flask & Backend Development</td>
+                    <td>พัฒนาเว็บแอปพลิเคชันด้วย Python Flask</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+{% endblock %}
+
+

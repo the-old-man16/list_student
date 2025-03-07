@@ -1,0 +1,65 @@
+/* กำหนดพื้นฐานให้กับฟอร์มเข้าสู่ระบบ */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* กำหนดขนาดและการจัดเรียงของหัวข้อ */
+.login-container h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* จัดระเบียบการแสดงผลสำหรับแต่ละฟอร์ม */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* สไตล์ให้กับ label และ input */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* เพิ่มการแสดงผลเมื่อ input ได้รับ focus */
+.form-input:focus {
+    outline: none;
+    border-color: #5b9bd5;
+}
+
+/* ปุ่ม submit */
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #5b9bd5;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #3a7bb9;
+}
+
+/* การจัดการข้อความที่แสดงผล */
+form {
+    display: flex;
+    flex-direction: column;
+}

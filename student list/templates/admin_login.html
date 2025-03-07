@@ -1,0 +1,25 @@
+{% extends "layer.html" %}
+
+{% block title %}
+    เข้าสู่ระบบแอดมิน
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 class="text-center text-primary mb-4">เข้าสู่ระบบแอดมิน</h2>
+                <form method="POST" class="bg-light p-5 rounded shadow-lg border border-primary">
+                    <div class="mb-4">
+                        <label for="password" class="form-label">รหัสผ่าน:</label>
+                        <input type="password" id="password" name="password" class="form-control form-control-lg" required placeholder="กรอกรหัสผ่านแอดมิน">
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg w-100">เข้าสู่ระบบ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

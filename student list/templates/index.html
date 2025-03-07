@@ -1,0 +1,49 @@
+{% extends "layer.html" %}
+
+{% block title %}
+    สมัครเรียน
+{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow-lg p-4">
+                <h3 class="text-center mb-4">สมัครเรียน</h3>
+                <form method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">ชื่อ</label>
+                        <input type="text" id="name" name="name" class="form-control" required placeholder="กรอกชื่อของคุณ">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">อีเมล</label>
+                        <input type="email" id="email" name="email" class="form-control" required placeholder="กรอกอีเมลของคุณ">
+                    </div>
+                    <div class="mb-3">
+                        <label for="course" class="form-label">หลักสูตร</label>
+                        <select id="course" name="course" class="form-select" required>
+                            <option value="">กรุณาเลือกหลักสูตร</option>
+                            <option value="IT">Python</option>
+                            <option value="IT">html</option>
+                            <option value="IT">php</option>
+                            <option value="IT">JavaScript</option>
+                            <option value="Full Stack"> Full Stack</option>
+                        </select>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">รหัสผ่าน</label>
+                        <input type="password" id="password" name="password" class="form-control" required placeholder="กรอกรหัสผ่านของคุณ">
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirm_password" class="form-label">ยืนยันรหัสผ่าน</label>
+                        <input type="password" id="confirm_password" name="confirm_password" class="form-control" required placeholder="ยืนยันรหัสผ่านของคุณ">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary w-100">สมัครเรียน</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

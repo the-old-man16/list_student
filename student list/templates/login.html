@@ -1,0 +1,23 @@
+{% extends "layer.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/log.css') }}">
+<div class="login-container">
+    <h2>เข้าสู่ระบบ</h2>
+    <form method="POST">
+        <div class="form-group">
+            <label for="email">อีเมล</label>
+            <input type="email" name="email" id="email" required placeholder="กรุณากรอกอีเมล" class="form-input">
+        </div>
+        
+        <div class="form-group">
+            <label for="password">รหัสผ่าน</label>
+            <input type="password" name="password" id="password" required placeholder="กรุณากรอกรหัสผ่าน" class="form-input">
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn-submit">เข้าสู่ระบบ</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

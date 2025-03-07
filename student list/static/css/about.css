@@ -1,0 +1,62 @@
+/* 🔹 Course Banner */
+.course-banner {
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.course-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.course-subtitle {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* 🔹 Course Details */
+.course-details {
+    padding: 50px 0;
+}
+
+.course-image {
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Course Syllabus Table */
+.course-syllabus {
+    padding: 50px 0;
+}
+
+.table {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th, .table td {
+    text-align: center;
+    padding: 15px;
+}
+
+.table-dark th {
+    background-color: #007bff;
+}
+
+/* 🔹 CTA Button */
+.btn-primary {
+    background-color: #ffcc00;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #ff9900;
+    transform: scale(1.1);
+}

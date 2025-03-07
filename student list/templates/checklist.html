@@ -1,0 +1,38 @@
+{% extends "layer.html" %}
+
+{% block title %}
+ตรวจสอบรายชื่อผู้สมัคร
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">รายชื่อผู้สมัครเรียน</h2>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">ลำดับที่</th>
+                        <th scope="col">ชื่อ</th>
+                        <th scope="col">อีเมล</th>
+                        <th scope="col">หลักสูตรที่สมัคร</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for student in students %}
+                        <tr>
+                            <th scope="row">{{ loop.index }}</th>
+                            <td>{{ student.name }}</td>
+                            <td>{{ student.email }}</td>
+                            <td>{{ student.course }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="/" class="btn btn-secondary">กลับสู่หน้าหลัก</a>
+        </div>
+    </div>
+{% endblock %}

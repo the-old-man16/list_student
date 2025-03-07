@@ -1,0 +1,28 @@
+{% extends "layer.html" %}
+
+{% block title %}
+แก้ไขข้อมูลนักศึกษา
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">แก้ไขข้อมูลนักศึกษา</h2>
+
+        <form method="POST">
+            <div class="mb-3">
+                <label for="name" class="form-label">ชื่อ</label>
+                <input type="text" class="form-control" id="name" name="name" value="{{ student.name }}" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">อีเมล</label>
+                <input type="email" class="form-control" id="email" name="email" value="{{ student.email }}" required>
+            </div>
+            <div class="mb-3">
+                <label for="course" class="form-label">หลักสูตรที่สมัคร</label>
+                <input type="text" class="form-control" id="course" name="course" value="{{ student.course }}" required>
+            </div>
+            <button type="submit" class="btn btn-primary">บันทึก</button>
+            <a href="{{ url_for('checklist') }}" class="btn btn-secondary">ยกเลิก</a>
+        </form>
+    </div>
+{% endblock %}

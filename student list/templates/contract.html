@@ -1,0 +1,37 @@
+{% extends "layer.html" %}
+
+{% block title %}
+ติดต่อแอดมิน
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/admin.css') }}">
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="card shadow-lg p-4" style="max-width: 600px; width: 100%; border-radius: 15px;">
+            <div class="card-body">
+                <h2 class="text-center mb-4 text-primary fw-bold">ติดต่อแอดมิน</h2>
+                <p class="text-center text-muted">กรุณากรอกข้อมูลเพื่อติดต่อเรา เราจะตอบกลับโดยเร็วที่สุด</p>
+
+                <form action="{{ url_for('contract') }}" method="post">
+                    <div class="mb-3">
+                        <label for="name" class="form-label fw-semibold">ชื่อ</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-semibold">อีเมล</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label fw-semibold">ข้อความ</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 fw-bold">ส่งข้อความ</button>
+                </form>
+
+                <div class="text-center mt-4">
+                    <a href="/" class="btn btn-outline-secondary">กลับสู่หน้าหลัก</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

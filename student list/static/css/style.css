@@ -1,0 +1,30 @@
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* ทำให้ข้อความอยู่กลางจอ */
+}
+
+.welcome-text {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #000;  /* เปลี่ยนสีตัวอักษรเป็นสีดำ */
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #000;  /* เปลี่ยนสีขีดกระพริบเป็นสีดำ */
+    width: 0;
+    animation: typing 3s steps(22, end) forwards, blink 0.7s infinite;
+}
+
+
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
