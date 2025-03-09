@@ -159,7 +159,7 @@ def admin_login():
         password = request.form['password']
 
         # กำหนดรหัสผ่านของแอดมิน
-        admin_password = 'oasis69'  # ตั้งรหัสผ่านของแอดมิน
+        admin_password = '#'  # ตั้งรหัสผ่านของแอดมิน
 
         # ตรวจสอบรหัสผ่าน
         if password == admin_password:
